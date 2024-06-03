@@ -38,12 +38,18 @@
         transform-origin: left;
     }
 </style>
+<script>
+    function changeText(id) {
+        id.innerHTML = "hello world!";
+    }
+</script>
 
 <body>
     <div>
-        <button class="btn">
+        <button class="btn" onclick='changeText(this)'>
             Click me!
         </button>
+        <!-- <h1 id="changeText"> potato</h1> -->
     </div>
 </body>
 

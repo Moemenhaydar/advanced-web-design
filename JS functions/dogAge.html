@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cyears(form) {
+            form.dogage.value = form.myage.value * 7
+        }
+    </script>
+</head>
+
+<body>
+    <form method="post">
+        <label for="myage">Enter ur age</label>
+        <input type="text" name="myage"> <br>
+        <input type="button" value="calculate" onclick="cyears(this.form)"><br>
+        <label for="dogage">dog age</label>
+        <input type="text" name="dogage">
+    </form>
+</body>
+
+</html>
